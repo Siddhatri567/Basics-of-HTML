@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: linear-gradient(to right, #dbeafe, #f0f9ff);
+            padding: 30px;
+            color: #222;
+        }
+        .container{
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .heading{
+            margin-bottom: 15px;
+            color: #1e40af;
+            font-size: 35px;
+        }
+        .section-one{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        ol{
+            padding-left: 30px;
+            margin-top: 10px;
+        }
+
+        h2{
+            margin-top: 20px;
+        }
+
+        ul{
+            padding-left: 30px;
+            margin-top: 10px;
+        }
+        .section-two{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .section-three{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        dl{
+            margin-top: 15px;
+        }
+
+        dt{
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 15px;
+        }
+
+        dd{
+            margin-left: 25px;
+            margin-top: 5px;
+            color: #444;
+        }
+
+        .section-four{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .section-five{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        menu{
+            padding-left: 30px;
+            margin-top: 10px;
+        }
+        .section-six{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .section-seven{
+            border-left: 5px solid #3b82f6;
+            background-color: #f8fafc;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1.Ordered List -->
+         <div class="section-one">
+        <h1 class="heading">Ordered List</h1>
+        <ol>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        
+        <h1 class="heading">Ordered List Attributes and Properties</h1>
+        <h2>1.type Attribute</h2>
+        <ol type="A">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ol>
+
+        <h2>2.start Attribute</h2>
+        <ol start="5">
+            <li>Chapter Five</li>
+            <li>Chapter Six</li>
+        </ol>
+
+        <h2>3.reversed Attribute</h2>
+        <ol reversed>
+            <li>Third</li>
+            <li>Second</li>
+            <li>First</li>
+        </ol>
+    </div>
+
+    <!-- 2.Unordered List -->
+    <div class="section-two">
+        <h1 class="heading">Unordered List</h1>
+        <ul>
+            <li>Computer</li>
+            <li>Keyboard</li>
+            <li>Mouse</li>
+        </ul>    
+    </div>
+
+    <div class="section-three">
+        <h1 class="heading">Description/Definition List</h1>
+        <dl>
+            <dt>HTML5</dt>
+            <dd>Markup language used for webpage creation.</dd>
+
+            <dt>CSS</dt>
+            <dd>Styles webpage appearance.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Adds interactivity to webpages.</dd>
+        </dl>
+    </div>
+
+    <div class="section-four">
+        <h1 class="heading">Nested List</h1>
+        <ul>
+            <li>Programming Languages
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+            </li>
+
+            <li>Web Technologies
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-five">
+        <h1 class="heading">Menu list</h1>
+        <menu>
+            <li>Home</li>
+            <li>About</li>
+        </menu>
+    </div>
+
+    <div class="section-six">
+        <h1 class="heading">List Using Global Attributes</h1>
+        <ul id="subjects" class="mainlist" style="color:blue;" title="Subject List">
+            <li>Mathematics</li>
+            <li>Science</li>
+        </ul>
+    </div>
+
+    <div class="section-seven">
+        <h1 class="heading">List using CSS styling</h1>
+        <ul style="
+                list-style-type:square;
+                color:rgb(73, 158, 181);
+                font-size:20px;
+                ">
+            <li>HTML5</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+
+</div>
+
+
+</body>
+</html>
