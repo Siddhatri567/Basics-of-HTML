@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #f5f0ff;
+        padding: 30px;
+        color: #222;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 60%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: #faf5ff;
+      }
+
+      th {
+        background-color: #7c3aed;
+        color: white;
+      }
+      .section-one {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      .heading {
+        margin: 10px;
+        color: #5b21b6;
+      }
+      h1 {
+        text-align: center;
+        color: #5b21b6;
+      }
+      .section-two {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      .headin {
+        margin: 10px;
+        color: #5b21b6;
+        margin-left: 100px;
+      }
+      .section-three {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      .section-four {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tables in HTML</h1>
+      <div class="section-one">
+        <h2 class="heading">Example 1 : Basic HTML Table</h2>
+        <h2 class="headin">Student Information</h2>
+        <table>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Semester</th>
+          </tr>
+
+          <tr>
+            <td>101</td>
+            <td>Siddhu</td>
+            <td>CSE</td>
+            <td>5</td>
+          </tr>
+
+          <tr>
+            <td>102</td>
+            <td>Divya</td>
+            <td>BSC</td>
+            <td>5</td>
+          </tr>
+
+          <tr>
+            <td>103</td>
+            <td>S. Gill</td>
+            <td>CSE</td>
+            <td>6</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-two">
+        <h2 class="heading">Example 2 : Using HTML5 Semantic Table Tag</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Amit</td>
+              <td>25000</td>
+            </tr>
+
+            <tr>
+              <td>Neha</td>
+              <td>30000</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="2">Company Payroll Data</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="section-three">
+        <h2 class="heading">Example 3 : colspan in HTML Table</h2>
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Marks</th>
+          </tr>
+
+          <tr>
+            <td>S.Gill</td>
+            <td>80</td>
+          </tr>
+
+          <tr>
+            <td>A.Sharma</td>
+            <td>85</td>
+          </tr>
+
+          <tr>
+            <td>kishan</td>
+            <td>90</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Total Students : 3</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-four">
+        <h2 class="heading">Example 4 : rowspan in HTML Table</h2>
+        <table border="1">
+          <tr>
+            <th>Course</th>
+            <th>Semester</th>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Diploma in CSE</td>
+            <td>Semester 1</td>
+          </tr>
+
+          <tr>
+            <td>Semester 2</td>
+          </tr>
+
+          <tr>
+            <td>Semester 3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
