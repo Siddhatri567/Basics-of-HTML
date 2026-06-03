@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: linear-gradient(to right, #dbeafe, #f0f9ff);
+        padding: 30px;
+        color: #222;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      form label {
+        display: inline-block;
+        width: 150px;
+      }
+      h1 {
+        text-align: center;
+        color: #5b21b6;
+      }
+      .heading {
+        margin: 10px;
+        color: #5b21b6;
+      }
+      .section-one {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      .section-two {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .section-two h2 {
+        margin-top: 20px;
+      }
+
+      .section-two h3 {
+        margin-bottom: 10px;
+      }
+
+      .la {
+        margin-left: 10px;
+      }
+      .section-three {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .section-four {
+        border-left: 5px solid #7c3aed;
+        background-color: #f8fafc;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forms in HTML</h1>
+      <div class="section-one">
+        <h2 class="heading">Example : Simple HTML5 form</h2>
+        <form>
+          <label>Student Name:</label>
+          <input type="text"/><br/><br/>
+          <label>Email:</label>
+          <input type="email"/><br/><br/>
+          <label>Date of Birth:</label>
+          <input type="date"/><br/><br/>
+          <input type="submit"/>
+        </form>
+      </div>
+      <h1>Examples of Advanced Input Types</h1>
+      <div class="section-two">
+        <h2 class="heading">Example 1: Email Input</h2>
+        <h3 class="heading">Used for email validation.</h3>
+        <label class="la">Email:</label>
+        <input type="email"/>
+        <br/>
+
+        <h2 class="heading">Example 2: Date Input</h2>
+        <h3 class="heading">Used to select dates from a calendar.</h3>
+        <label class="la">Date</label>
+        <input type="date"/>
+        <br/>
+
+        <h2 class="heading">Example 3: Number Input</h2>
+        <h3 class="heading">Used to accept numeric values only.</h3>
+        <label class="la">Age: </label>
+        <input type="number"/>
+        <br />
+
+        <h2 class="heading">Example 4: Range Input</h2>
+        <h3 class="heading">Creates a slider control.</h3>
+        <label class="la">Range</label>
+        <input type="range"/>
+        <br />
+
+        <h2 class="heading">Example 5: Colour Input</h2>
+        <h3 class="heading">Allows users to choose colours.</h3>
+        <label class="la">Color</label>
+        <input type="color"/>
+        <br />
+
+        <h2 class="heading">Example 6: URL Input</h2>
+        <h3 class="heading">Validates website URLs.</h3>
+        <label class="la">URL</label>
+        <input type="url"/>
+      </div>
+
+      <div class="section-three">
+        <h1>Complete HTML5 Form Example</h1>
+        <h2 class="heading">Student Registration Form</h2>
+        <form>
+          <label>Student Name:</label>
+          <input type="text" placeholder="Enter Name" required /><br/><br/>
+          <label>Email:</label>
+          <input type="email" placeholder="Enter Email" /><br/><br/>
+          <label>Password:</label>
+          <input type="password"/><br/><br/>
+          <label>Date of Birth:</label>
+          <input type="date"/><br/><br/>
+          <label>Age:</label>
+          <input type="number"/><br/><br/>
+          <label>Favourite Colour:</label>
+          <input type="color"/><br/><br/>
+          <label>Website:</label>
+          <input type="url"/><br/><br/>
+          <label>Satisfaction Level:</label>
+          <input type="range" /><br/><br/>
+          <input type="submit" value="Register"/>
+        </form>
+      </div>
+
+      <div class="section-four">
+        <h1>Additional Form Controls</h1>
+        <h2 class="heading">1. Textarea</h2>
+        <h3 class="heading">Used for multi-line text input.</h3>
+        <textarea
+          rows="5"
+          cols="30"
+          placeholder="give your feedback...."
+          style="margin-left: 15px"
+        ></textarea>
+
+        <h2 class="heading">2. Select and Option</h2>
+        <h3 class="heading">Used for drop-down lists.</h3>
+        <select style="margin-left: 15px">
+          <option>Choose your course</option>
+          <option>BCA</option>
+          <option>BSc IT</option>
+          <option>MCA</option>
+        </select>
+
+        <h2 class="heading">3. Radio Buttons</h2>
+        <h3 class="heading">Used to select one option from multiple choices.</h3>
+        <input type="radio" name="gender" style="margin-left: 10px;"/> Male
+        <input type="radio" name="gender"/> Female
+
+        <h2 class="heading">4. Checkboxes</h2>
+        <h3 class="heading">Used for selecting multiple options.</h3>
+        <input type="checkbox" style="margin-left: 15px;"> Cricket
+        <input type="checkbox"> Music
+
+
+      </div>
+    </div>
+  </body>
+</html>
